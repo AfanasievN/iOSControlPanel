@@ -14,15 +14,19 @@ const SquareButton = ({onPress, iconName, iconColor, color}) => (
         backgroundColor: color || COLORS.gray,
       },
     ]}>
-    <Icon name={iconName} color={iconColor || COLORS.white} size={FONTS.title1} />
+    <Icon
+      name={iconName}
+      color={iconColor || COLORS.white}
+      size={FONTS.title1}
+    />
   </TouchableOpacity>
 );
 
 SquareButton.propTypes = {
+  iconColor: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   iconName: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
-  iconColor: PropTypes.string,
-  color: PropTypes.string,
 };
 
 export default SquareButton;

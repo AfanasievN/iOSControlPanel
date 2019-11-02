@@ -23,10 +23,12 @@ const RoundButtonWithTitle = ({onPress, iconName, footnote, title, color}) => (
 );
 
 RoundButtonWithTitle.propTypes = {
+  iconColor: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   iconName: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  footnote: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
-  color: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 export default RoundButtonWithTitle;

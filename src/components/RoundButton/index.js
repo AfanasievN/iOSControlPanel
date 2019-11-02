@@ -19,9 +19,9 @@ const RoundButton = ({onPress, iconName, color}) => (
 );
 
 RoundButton.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   iconName: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
-  color: PropTypes.string,
 };
 
 export default RoundButton;
