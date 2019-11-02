@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {COLORS, RADIUS} from '../../globalStyles';
+import {RADIUS} from '../../globalStyles';
 
 const styles = StyleSheet.create({
   container: {
